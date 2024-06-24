@@ -9,7 +9,9 @@ The dataset consists   of 10,000 students records, each containing the following
 2. Previous Scores: The scores obtained by students in previous tests.
 3. Extracurricular Activities: Whether the student participates in extracurricular activities. 
 4. Sleep Hours: The average number of hours of sleep the student had per day.
-5. Sample Question Papers Practiced: The number of sample question papers the student practiced. 
+5. Sample Question Papers Practiced: The number of sample question papers the student practiced.
+
+![dataset-snapshot](https://github.com/diandree/multiple-linear-regression-comparison/assets/37777059/b33f49be-7358-49ed-be84-2ddaf8ad639f)
 
 You can find this dataset on [Kaggle](https://www.kaggle.com/datasets/nikhil7280/student-performance-multiple-linear-regression).
 
@@ -65,18 +67,17 @@ $$R^2 = \frac{\text{sum squared regression (SSR)}}{\text{total sum of squares (S
 
  *gradient descent* is described as:
 
-$$\begin{align*} \text{repeat}&\text{ until convergence:} \; \lbrace \newline
-\;  w_{j} &= w_{j} -  \alpha \frac{\partial J(w,b)}{\partial w} \tag{4}  \; \newline 
+$$\begin{align*} \text{repeat}&\text{ until convergence:}  \lbrace \newline
+  w_{j} &= w_{j} -  \alpha \frac{\partial J(w,b)}{\partial w_{j} \tag{4}   \newline 
  b &= b -  \alpha \frac{\partial J(w,b)}{\partial b}  \newline \rbrace
 \end{align*}$$
+
+
 where, parameters $w$, $b$ are updated simultaneously.  
+
 The gradient is defined as:
-$$
-\begin{align}
-\frac{\partial J(w,b)}{\partial w}  &= \frac{1}{m} \sum\limits_{i = 0}^{m-1} (f_{w,b}(x^{(i)}) - y^{(i)})x^{(i)} \tag{5}\\
-  \frac{\partial J(w,b)}{\partial b}  &= \frac{1}{m} \sum\limits_{i = 0}^{m-1} (f_{w,b}(x^{(i)}) - y^{(i)}) \tag{6}\\
-\end{align}
-$$
+![gd](https://github.com/diandree/multiple-linear-regression-comparison/assets/37777059/d76989be-e679-44ce-b39c-73e2c25d28a7)
+
 
 Here *simultaneously* means that you calculate the partial derivatives for all the parameters before updating any of the parameters.
 
