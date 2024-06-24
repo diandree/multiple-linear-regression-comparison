@@ -67,11 +67,7 @@ $$R^2 = \frac{\text{sum squared regression (SSR)}}{\text{total sum of squares (S
 
  *gradient descent* is described as:
 
-$$\begin{align*} \text{repeat}&\text{ until convergence:}  \lbrace \newline
-  w_{j} &= w_{j} -  \alpha \frac{\partial J(w,b)}{\partial w_{j} \tag{4}   \newline 
- b &= b -  \alpha \frac{\partial J(w,b)}{\partial b}  \newline \rbrace
-\end{align*}$$
-
+![multipleLR-compute-gradient](https://github.com/diandree/multiple-linear-regression-comparison/assets/37777059/73841676-7d0f-40fd-82ec-62e1394905bc)
 
 where, parameters $w$, $b$ are updated simultaneously.  
 
